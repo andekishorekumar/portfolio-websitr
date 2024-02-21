@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bmi calculator</title>
+</head>
+<body>
+    <h1>bmi calculator.</h1>
+        <script>
+        var weight=prompt("enter your weight:");
+var height=prompt("enter your height:");
+
+function bmiCalculator(weight , height){
+        var bmiCalculator=Math.round( (weight/(height*height)));
+                                     
+        return bmiCalculator;
+}
+
+bmiCalculator=bmiCalculator (weight , height);
+
+
+if (bmiCalculator < 18.5){
+    alert( "your bmi is: "+bmiCalculator+" , so you are underweight.");
+}
+
+if (bmiCalculator >= 18.5 && bmiCalculator <= 24.9){
+      alert( "your bmi is: "+bmiCalculator+" , so you are normal.");
+}
+
+if (bmiCalculator > 24.9) {   
+
+     alert( "your bmi is: "+bmiCalculator+" , so you are overweight.");
+}
+
+    </script>
+
+</body>
+</html>
